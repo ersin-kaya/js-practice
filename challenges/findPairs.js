@@ -1,3 +1,4 @@
+// No built-in JavaScript functions are used in this solution.
 // Not optimized
 function findPairs(arr, target) {
   let resultArr = [];

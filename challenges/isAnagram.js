@@ -1,3 +1,4 @@
+// No built-in JavaScript functions are used in this solution.
 // First approach
 // function isAnagram(str1, str2) {
 //   if (str1.length !== str2.length) {
@@ -28,6 +29,7 @@
 //   return true;
 // }
 
+// No built-in JavaScript functions are used in this solution.
 // Second approach
 
 // let myObject = { a: 3 };

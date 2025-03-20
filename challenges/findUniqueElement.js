@@ -1,3 +1,4 @@
+// No built-in JavaScript functions are used in this solution.
 // First approach - time complexity: O(n^2)
 // function findUniqueElement(arr) {
 //   for (let i = 0; i < arr.length; i++) {
@@ -13,6 +14,7 @@
 //   }
 // }
 
+// No built-in JavaScript functions are used in this solution.
 // Second approach - time complexity: O(n)
 function findUniqueElement(arr) {
   let countMap = {};
