@@ -1,28 +1,50 @@
 // No built-in JavaScript functions are used in this solution.
+
+// First approach - time complexity: O(n^3)
 // Not optimized
+// function findPairs(arr, target) {
+//   let resultArr = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = i + 1; j < arr.length; j++) {
+//       if (arr[i] + arr[j] === target) {
+//         let newArr = [arr[i], arr[j]];
+
+//         let alreadyExists = false;
+//         for (let k = 0; k < resultArr.length; k++) {
+//           if (resultArr[k][0] === newArr[0] && resultArr[k][1] === newArr[1]) {
+//             alreadyExists = true;
+//             break;
+//           }
+//         }
+
+//         if (!alreadyExists) {
+//           resultArr[resultArr.length] = newArr;
+//         }
+//       }
+//     }
+//   }
+//   return resultArr;
+// }
+
+// Second approach - time complexity: O(n)
 function findPairs(arr, target) {
-  let resultArr = [];
+  let seen = {};
+  let result = [];
 
   for (let i = 0; i < arr.length; i++) {
-    for (let j = i + 1; j < arr.length; j++) {
-      if (arr[i] + arr[j] === target) {
-        let newArr = [arr[i], arr[j]];
+    let complement = target - arr[i];
 
-        let alreadyExists = false;
-        for (let k = 0; k < resultArr.length; k++) {
-          if (resultArr[k][0] === newArr[0] && resultArr[k][1] === newArr[1]) {
-            alreadyExists = true;
-            break;
-          }
-        }
+    if (seen[complement] === true) {
+      result[result.length] = [complement, arr[i]];
+      seen[complement] = false;
+    }
 
-        if (!alreadyExists) {
-          resultArr[resultArr.length] = newArr;
-        }
-      }
+    if (seen[arr[i]] === undefined) {
+      seen[arr[i]] = true;
     }
   }
-  return resultArr;
+  return result;
 }
 
 console.log(findPairs([1, 2, 3, 4, 5], 6)); // Output: [[1, 5], [2, 4]]
