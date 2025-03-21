@@ -1,31 +1,58 @@
 // No built-in JavaScript functions are used in this solution.
 // // First approach
 // // time complexity: O(n^2), space complexity: O(n^2)
+// function longestIncreasingSubsequence(arr) {
+//   let subsequences = {};
+//   let startIndex = 0;
+
+//   while (startIndex < arr.length) {
+//     let prevValue = arr[startIndex];
+//     for (let i = startIndex; i < arr.length; i++) {
+//       if (i === startIndex) {
+//         subsequences[startIndex] = [arr[i]];
+//       }
+//       if (arr[i] > prevValue) {
+//         prevValue = arr[i];
+//         subsequences[startIndex] = [...subsequences[startIndex], arr[i]];
+//       }
+//     }
+//     startIndex++;
+//   }
+
+//   let longest = 0;
+//   for (let key in subsequences) {
+//     if (subsequences[key].length > longest) {
+//       longest = subsequences[key].length;
+//     }
+//   }
+//   return longest;
+// }
+
+// No built-in JavaScript functions are used in this solution.
+// // Optimized first approach
+// // time complexity: O(n^2), space complexity: O(n)
 function longestIncreasingSubsequence(arr) {
-  let subsequences = {};
+  let subsequence = [];
+  let tempSubsequence = [];
   let startIndex = 0;
 
   while (startIndex < arr.length) {
-    let temp = arr[startIndex];
+    let prevValue = arr[startIndex];
+    tempSubsequence = [arr[startIndex]];
     for (let i = startIndex; i < arr.length; i++) {
-      if (i === startIndex) {
-        subsequences[startIndex] = [arr[i]];
-      }
-      if (arr[i] > temp) {
-        temp = arr[i];
-        subsequences[startIndex] = [...subsequences[startIndex], arr[i]];
+      if (arr[i] > prevValue) {
+        prevValue = arr[i];
+        tempSubsequence = [...tempSubsequence, arr[i]];
       }
     }
     startIndex++;
-  }
-
-  let longest = 0;
-  for (let key in subsequences) {
-    if (subsequences[key].length > longest) {
-      longest = subsequences[key].length;
+    if (tempSubsequence.length > subsequence.length) {
+      subsequence.length = tempSubsequence.length;
+      subsequence = tempSubsequence;
     }
   }
-  return longest;
+
+  return subsequence.length;
 }
 
 console.log(longestIncreasingSubsequence([10, 22, 9, 33, 21, 50, 41, 60])); // Output: 5  (10, 22, 33, 50, 60)
