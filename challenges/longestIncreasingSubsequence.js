@@ -13,7 +13,9 @@
 //       }
 //       if (arr[i] > prevValue) {
 //         prevValue = arr[i];
-//         subsequences[startIndex] = [...subsequences[startIndex], arr[i]];
+//         // Using spread (...) here causes O(n^3) time complexity due to repeated array copying
+//         // subsequences[startIndex] = [...subsequences[startIndex], arr[i]]; // time.c.: O(k), space.c.: O(k)
+//         subsequences[startIndex][subsequences[startIndex].length] = arr[i]; // time.c.: O(1), space.c.: O(1)
 //       }
 //     }
 //     startIndex++;
@@ -42,14 +44,15 @@ function longestIncreasingSubsequence(arr) {
     for (let i = startIndex; i < arr.length; i++) {
       if (arr[i] > prevValue) {
         prevValue = arr[i];
-        tempSubsequence = [...tempSubsequence, arr[i]];
+        // Using spread (...) here causes O(n^3) time complexity due to repeated array copying
+        // tempSubsequence = [...tempSubsequence, arr[i]];
+        tempSubsequence[tempSubsequence.length] = arr[i];
       }
     }
-    startIndex++;
     if (tempSubsequence.length > subsequence.length) {
-      subsequence.length = tempSubsequence.length;
       subsequence = tempSubsequence;
     }
+    startIndex++;
   }
 
   return subsequence.length;
