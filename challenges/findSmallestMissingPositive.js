@@ -1,3 +1,10 @@
+// Question:
+// Write an algorithm to find the smallest missing positive integer in a given array.
+// Ignore zero and negative numbers.
+// You should find only the missing positive number.
+// ________________________________________________________________________________________________
+//
+//
 // No built-in JavaScript functions are used in this solution.
 // time complexity: O(n), space complexity: O(n)
 function findSmallestMissingPositive(arr) {

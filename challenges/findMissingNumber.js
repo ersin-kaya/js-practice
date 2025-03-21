@@ -1,6 +1,15 @@
+// Question:
+// You are given an array containing integers from 1 to n, but one number is missing.
+// Write an algorithm to find the missing number.
+// 📌 The array should contain n elements, but it has only n - 1.
+// 📌 All elements are unique, and you need to find the one that’s missing.
+// 📌 Do not use any built-in functions!
+// ________________________________________________________________________________________________
+//
+//
 // No built-in JavaScript functions are used in this solution.
-// // First approach
-// // time complexity: O(n), space complexity: O(n)
+// First approach
+// time complexity: O(n), space complexity: O(n)
 // function findMissingNumber(arr) {
 //   let seen = {};
 //   let n = arr.length + 1;
@@ -17,8 +26,8 @@
 // }
 
 // No built-in JavaScript functions are used in this solution.
-// // Second approach
-// // time complexity: O(n), space complexity: O(1)
+// Second approach
+// time complexity: O(n), space complexity: O(1)
 function findMissingNumber(arr) {
   let n = arr.length + 1;
   let total = n * ((n + 1) / 2);

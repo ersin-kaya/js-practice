@@ -1,3 +1,11 @@
+// Question:
+// Given an array containing numbers from 1 to n, one number is repeated twice.
+// Write an algorithm to find the duplicate number.
+// 📌 The array has n + 1 elements, since one number appears more than once.
+// 📌 Do not use any built-in functions!
+// ________________________________________________________________________________________________
+//
+//
 // No built-in JavaScript functions are used in this solution.
 // time complexity: O(n), space complexity: O(1)
 function findDuplicate(arr) {

@@ -1,5 +1,12 @@
+// Question:
+// In a given array, every element appears exactly twice, except for one element that appears only once.
+// Write an algorithm to find that unique number.
+// ________________________________________________________________________________________________
+//
+//
 // No built-in JavaScript functions are used in this solution.
-// First approach - time complexity: O(n^2)
+// First approach
+// time complexity: O(n^2), space complexity: O(1)
 // function findUniqueElement(arr) {
 //   for (let i = 0; i < arr.length; i++) {
 //     let count = 0;
@@ -15,7 +22,8 @@
 // }
 
 // No built-in JavaScript functions are used in this solution.
-// Second approach - time complexity: O(n)
+// Second approach
+// time complexity: O(n), space complexity: O(n)
 function findUniqueElement(arr) {
   let countMap = {};
   for (let i in arr) {

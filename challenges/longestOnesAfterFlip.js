@@ -1,3 +1,11 @@
+// Question:
+// Given an array consisting of 0s and 1s, you are allowed to flip at most one 0 to 1.
+// Return the length of the longest consecutive sequence of 1s that can be achieved after this flip.
+// 📌 Do not use any built-in functions.
+// 📌 The array contains only positive integers (0 and 1).
+// ________________________________________________________________________________________________
+//
+//
 // No built-in JavaScript functions are used in this solution.
 // time complexity: O(n^2), space complexity: O(1)
 // function longestOnesAfterFlip(arr) {

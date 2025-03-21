@@ -1,3 +1,9 @@
+// 📌 Question:
+// Given an array, write an algorithm to check whether any two numbers sum up to a given target value.
+// (Return true if such a pair exists, otherwise return false.)
+// ________________________________________________________________________________________________
+//
+//
 // No built-in JavaScript functions are used in this solution.
 // Time complexity: O(n), space complexity: O(n)
 function hasPairWithSum(arr, target) {

@@ -1,3 +1,14 @@
+// Question:
+// Given an array of positive integers, find which numbers from 1 to n are missing from the array.
+// n is the length of the array.
+// All numbers should be within the range 1 to n.
+// Some numbers may appear more than once (duplicates).
+// Return all missing numbers.
+// 📌 Do not use any built-in functions.
+// 📌 Try to solve it without using an extra array if possible.
+// ________________________________________________________________________________________________
+//
+//
 // No built-in JavaScript functions are used in this solution.
 // time complexity: O(n), space complexity: O(n)
 function findMissingNumbers(arr) {

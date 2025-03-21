@@ -1,3 +1,9 @@
+// Question:
+// Write an algorithm to find the first repeating element in a given array.
+// That is, you should return the first number that has already been seen before.
+// ________________________________________________________________________________________________
+//
+//
 // No built-in JavaScript functions are used in this solution.
 // time complexity: O(n), space complexity: O(n)
 function firstRepeatingElement(arr) {

@@ -1,6 +1,15 @@
+// 📌 Question:
+// In a given array, find the longest increasing subsequence.
+// 📌 Important:
+// A subsequence can consist of elements picked from anywhere in the array, but their order must be increasing.
+// You can skip elements, but the relative increasing order must not be broken.
+// Do not use any built-in functions!
+// ________________________________________________________________________________________________
+//
+//
 // No built-in JavaScript functions are used in this solution.
-// // First approach
-// // time complexity: O(n^2), space complexity: O(n^2)
+// First approach
+// time complexity: O(n^2), space complexity: O(n^2)
 // function longestIncreasingSubsequence(arr) {
 //   let subsequences = {};
 //   let startIndex = 0;
@@ -31,8 +40,8 @@
 // }
 
 // No built-in JavaScript functions are used in this solution.
-// // Optimized first approach
-// // time complexity: O(n^2), space complexity: O(n)
+// Optimized first approach
+// time complexity: O(n^2), space complexity: O(n)
 function longestIncreasingSubsequence(arr) {
   let subsequence = [];
   let tempSubsequence = [];

@@ -1,5 +1,14 @@
+// Question: Find the Longest Substring Without Repeating Characters
+// 📌 Given a string, find the length of the longest substring that contains only unique (non-repeating) characters.
+// ✅ Find the longest substring without any repeating characters.
+// ✅ Return only the length, not the substring itself.
+// ✅ Keep the time complexity as low as possible.
+// ________________________________________________________________________________________________
+//
+//
 // No built-in JavaScript functions are used in this solution.
 // Not optimized
+// time complexity: O(n^2), space complexity: O(n^2)
 function longestUniqueSubstring(str) {
   let substrings = [];
   let index = 0;
@@ -17,14 +26,14 @@ function longestUniqueSubstring(str) {
   }
 
   let longestUniqueSubstringLength = 0;
-  // // for .. in
+  // for .. in
   // for (let key in substrings) {
   //   if (substrings[key].length > longestUniqueSubstringLength) {
   //     longestUniqueSubstringLength = substrings[key].length;
   //   }
   // }
 
-  // // for .. of
+  // for .. of
   for (let substring of substrings) {
     if (substring.length > longestUniqueSubstringLength) {
       longestUniqueSubstringLength = substring.length;

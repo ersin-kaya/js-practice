@@ -1,6 +1,15 @@
+// Question:
+// In a given array, every number appears exactly twice, except for one number that appears only once.
+// Write an algorithm to find that unique number.
+// 📌 Do not use any built-in functions!
+// 📌 The array may not be sorted.
+// 📌 Can you solve it in O(n) time and O(1) extra space?
+// ________________________________________________________________________________________________
+//
+//
 // No built-in JavaScript functions are used in this solution.
-// // First approach
-// // time complexity: O(n), space complexity: O(n)
+// First approach
+// time complexity: O(n), space complexity: O(n)
 // function findUniqueNumber(arr) {
 //   let seen = {};
 
@@ -17,7 +26,7 @@
 
 // No built-in JavaScript functions are used in this solution.
 // Second approach
-// // time complexity: O(n), space complexity: O(1)
+// time complexity: O(n), space complexity: O(1)
 function findUniqueNumber(arr) {
   // Example: 5 ^ 5 = 0
   // Example: 7 ^ 0 = 7

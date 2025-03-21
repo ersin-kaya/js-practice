@@ -1,5 +1,13 @@
+// Question: Anagram Check
+// 📌 Write a function that checks whether two strings are anagrams of each other.
+// 🔹 Anagram: Words that contain the same letters but in a different order.
+// 🔹 Example: "listen" and "silent" are anagrams.
+// ________________________________________________________________________________________________
+//
+//
 // No built-in JavaScript functions are used in this solution.
 // First approach
+// time complexity: O(n^3), space complexity: O(1)
 // function isAnagram(str1, str2) {
 //   if (str1.length !== str2.length) {
 //     return false;
@@ -31,13 +39,12 @@
 
 // No built-in JavaScript functions are used in this solution.
 // Second approach
-
+// time complexity: O(n), space complexity: O(n)
 // let myObject = { a: 3 };
 // console.log(myObject["a"]);
-// // myObject["b"] = 1;
+// myObject["b"] = 1;
 // myObject["b"] = (myObject["b"] || 0) + 10;
 // console.log(myObject["b"]);
-
 function isAnagram(str1, str2) {
   if (str1.length !== str2.length) {
     return false;

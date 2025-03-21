@@ -1,3 +1,10 @@
+// Question:
+// Given an array of integers, write an algorithm to return the index of the first repeating element.
+// If there are no repeating elements, return -1.
+// 📌 Do not use any built-in functions.
+// ________________________________________________________________________________________________
+//
+//
 // No built-in JavaScript functions are used in this solution.
 // time complexity: O(n), space complexity: O(n)
 function firstDuplicateIndex(arr) {

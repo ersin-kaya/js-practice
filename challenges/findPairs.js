@@ -1,6 +1,14 @@
+// 📌 Question: Pair Sum Matching
+// 📌 Given an array, find all unique pairs whose sum equals a given target value.
+// ✅ Do not repeat the same pair! ([1, 5] and [5, 1] are considered the same.)
+// ✅ Do not reuse the same element! (Each number can only be used once.)
+// ✅ If no pairs are found, return an empty array: [].
+// ________________________________________________________________________________________________
+//
+//
 // No built-in JavaScript functions are used in this solution.
-
-// First approach - time complexity: O(n^3)
+// First approach
+// time complexity: O(n^4), space complexity: O(n^2)
 // Not optimized
 // function findPairs(arr, target) {
 //   let resultArr = [];
@@ -27,7 +35,9 @@
 //   return resultArr;
 // }
 
-// Second approach - time complexity: O(n)
+// No built-in JavaScript functions are used in this solution.
+// Second approach
+// time complexity: O(n), space complexity: O(n)
 function findPairs(arr, target) {
   let seen = {};
   let result = [];

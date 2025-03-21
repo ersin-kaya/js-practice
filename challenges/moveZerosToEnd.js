@@ -1,6 +1,11 @@
+// Question:
+// Write an algorithm that moves all zeros to the end of the given array without changing the order of the other numbers.
+// ________________________________________________________________________________________________
+//
+//
 // No built-in JavaScript functions are used in this solution.
-// // First approach - with a new array
-// // time complexity: O(n), space complexity: O(n)
+// First approach - with a new array
+// time complexity: O(n), space complexity: O(n)
 // function moveZerosToEnd(arr) {
 //   let result = [];
 //   let zeroCount = 0;
@@ -21,6 +26,7 @@
 //   return result;
 // }
 
+// No built-in JavaScript functions are used in this solution.
 // Second approach - without a new array
 // time complexity: O(n), space complexity: O(1)
 function moveZerosToEnd(arr) {
@@ -34,6 +40,7 @@ function moveZerosToEnd(arr) {
       nonZeroIndex++;
     }
   }
+
   return arr;
 }
 

@@ -1,6 +1,13 @@
+// Question:
+// You are given two different arrays. Write an algorithm to check whether they have at least one common element.
+// 📌 Do not use any built-in functions!
+// 📌 Can you solve it in O(n) or O(n + m) time complexity?
+// ________________________________________________________________________________________________
+//
+//
 // No built-in JavaScript functions are used in this solution.
-// // First approach
-// // time complexity: O(n+m), space complexity: O(n+m)
+// First approach
+// time complexity: O(n+m), space complexity: O(n+m)
 // function hasCommonElement(arr1, arr2) {
 //   let common = {};
 
@@ -21,8 +28,8 @@
 // }
 
 // No built-in JavaScript functions are used in this solution.
-// // Second approach
-// // time complexity: O(n+m), space complexity: O(n)
+// Second approach
+// time complexity: O(n+m), space complexity: O(n)
 function hasCommonElement(arr1, arr2) {
   let storedElements = [];
 
