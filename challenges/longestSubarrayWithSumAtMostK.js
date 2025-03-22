@@ -23,6 +23,7 @@ function longestSubarrayWithSumAtMostK(arr, k) {
     sum += arr[right];
     currentLength++;
 
+    // We could use an if condition instead of while here, but we prefer while to ensure reliability in different scenarios.
     while (sum > k) {
       sum -= arr[left];
       currentLength--;

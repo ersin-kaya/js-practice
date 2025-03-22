@@ -49,6 +49,7 @@ function longestOnesAfterFlip(arr) {
       zeroCount++;
     }
 
+    // We could use an if condition instead of while here, but we prefer while to ensure reliability in different scenarios.
     while (zeroCount > 1) {
       if (arr[left] === 0) {
         zeroCount--;
